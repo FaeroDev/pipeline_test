@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build index.js -o dist"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,9 @@
   },
   "homepage": "https://github.com/FaeroDev/pipeline_test#readme",
   "dependencies": {
-    "chalk": "^5.0.0"
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.33.1"
   }
 }
