@@ -6,22 +6,22 @@ env:
   ARTIFACT_NAME: hello_test
 
 jobs:
-  build:
-    # name: pre Build and test
-    # runs-on: ubuntu-latest
-    # steps: 
+  # build:
+  #   name: pre Build and test
+  #   runs-on: ubuntu-latest
+  #   steps: 
 
-    # - name: check out code
-    #   uses: actions/checkout@v2
+  #   - name: check out code
+  #     uses: actions/checkout@v2
     
-    # - name: update apt
-    #   run: sudo apt update
+  #   - name: update apt
+  #     run: sudo apt update
 
-    # - name: install npm
-    #   run: sudo apt install npm -y
+  #   - name: install npm
+  #     run: sudo apt install npm -y
 
-    # - name: run hello.js
-    #   run: node hello.js
+  #   - name: run hello.js
+  #     run: node hello.js
 
   upload:
     name: upload artifact
