@@ -63,6 +63,9 @@ jobs:
 
     - name: run hello.js
       run: node hello.js
+      
+    - name: run mpm install
+      run: npm i
 
     - name: run npm start with chalk
       run: npm start
