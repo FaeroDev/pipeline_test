@@ -7,21 +7,21 @@ env:
 
 jobs:
   build:
-    name: Build
+    name: pre Build and test
     runs-on: ubuntu-latest
     steps: 
 
     - name: check out code
       uses: actions/checkout@v2
     
-    - name: update apt
-      run: sudo apt update
+#     - name: update apt
+#       run: sudo apt update
 
-    - name: install npm
-      run: sudo apt install npm -y
+#     - name: install npm
+#       run: sudo apt install npm -y
 
-    - name: run hello.js
-      run: node hello.js
+#     - name: run hello.js
+#       run: node hello.js
 
   upload:
     name: upload artifact
@@ -52,12 +52,15 @@ jobs:
       with:
         name: hello_test
     
-    - name: update apt
-      run: sudo apt update
+    - run: pwd
+    - run: ls -al
+    
+#     - name: update apt
+#       run: sudo apt update
 
-    - name: install npm
-      run: sudo apt install npm -y
+#     - name: install npm
+#       run: sudo apt install npm -y
 
-    - name: run hello.js
-      run: node hello.js
+#     - name: run hello.js
+#       run: node hello.js
 
