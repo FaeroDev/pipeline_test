@@ -1,24 +1,24 @@
 name: node pipeline test
 
-  on: push
+on: push
 
-  env: ARTIFACT_NAME: hello_test
+env: ARTIFACT_NAME: hello_test
 
-  jobs:
-    build:
-      name: Build
-      runs-on: ubuntu-latest
-      steps: 
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps: 
 
-      - name: check out code
-      uses: actions/checkout@v2
+    - name: check out code
+    uses: actions/checkout@v2
 
-      - name: update apt
-      run: sudo apt update
+    - name: update apt
+    run: sudo apt update
 
-      - name: install npm
-      run: sudo apt install npm -y
+    - name: install npm
+    run: sudo apt install npm -y
 
-      - name: run hello.js
-      run: node hello.js
+    - name: run hello.js
+    run: node hello.js
 
