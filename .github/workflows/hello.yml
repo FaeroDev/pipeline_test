@@ -38,3 +38,24 @@ jobs:
         name: ${{env.ARTIFACT_NAME}}
         path: .
 
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps: 
+
+    # - name: check out code
+    #   uses: actions/checkout@v2
+
+    - name: download artifact
+      uses: actions/download-artifact@v2
+        with: hello_test
+    
+    - name: update apt
+      run: sudo apt update
+
+    - name: install npm
+      run: sudo apt install npm -y
+
+    - name: run hello.js
+      run: node hello.js
+
