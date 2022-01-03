@@ -26,11 +26,12 @@ jobs:
   upload:
     name: upload artifact
     runs-on: ubuntu-latest
+    needs: build
     steps:
     
     - name: upload artifact
       uses: actions/upload-artifact@v2
       with:
         name: ${{env.ARTIFACT_NAME}}
-        path: ./${{env.ARTIFACT_NAME}}
+        path: .
 
