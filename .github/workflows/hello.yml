@@ -44,8 +44,8 @@ jobs:
     needs: upload
     steps: 
 
-#     - name: check out code
-#       uses: actions/checkout@v2
+    - run: pwd
+    - run: ls -al
 
     - name: download artifact
       uses: actions/download-artifact@v2
@@ -63,4 +63,7 @@ jobs:
 
     - name: run hello.js
       run: node hello.js
+
+    - name: run npm start with chalk
+      run: npm start
 

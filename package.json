@@ -1,0 +1,23 @@
+{
+  "name": "pipeline_test",
+  "version": "1.0.0",
+  "description": "Create a very simple NodeJS Pipeline",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FaeroDev/pipeline_test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FaeroDev/pipeline_test/issues"
+  },
+  "homepage": "https://github.com/FaeroDev/pipeline_test#readme",
+  "dependencies": {
+    "chalk": "^5.0.0"
+  }
+}
