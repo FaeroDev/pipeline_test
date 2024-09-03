@@ -48,7 +48,7 @@ jobs:
     - run: ls -al
 
     - name: download artifact
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: hello_test
     
